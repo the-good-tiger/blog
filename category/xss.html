@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xss - Bug Bounty Blog</title>
+    <meta name="description" content="Posts about {{CATEGORY_NAME}}">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+</head>
+<body>
+    <nav class="main-nav" data-animate="slide-down">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">Bug Bounty Blog</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/category/web-security.html">Web Security</a>
+                <a href="/category/tools.html">Tools</a>
+                <a href="/category/methodology.html">Methodology</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="content-wrapper">
+        <header class="category-header" data-animate="fade-in">
+            <h1>{{CATEGORY_NAME}}</h1>
+            <p class="category-description">All posts related to {{CATEGORY_NAME}}</p>
+        </header>
+        
+        <section class="category-posts">
+            <div class="posts-grid">
+                
+      <article class="post-preview">
+        <h2><a href="/sample_post.html">Advanced XSS Techniques for Modern Web Applications</a></h2>
+        <div class="post-meta">
+          <time datetime="Mon Jan 15 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">January 15, 2024</time>
+        </div>
+      </article>
+    
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>© 2024 Bug Bounty Blog. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    </footer>
+    
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
