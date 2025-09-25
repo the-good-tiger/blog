@@ -1,0 +1,14 @@
+{
+  "name": "bug-bounty-blog",
+  "type": "module",
+  "dependencies": {
+    "marked": "^9.0.0",
+    "front-matter": "^4.0.2",
+    "highlight.js": "^11.8.0",
+    "date-fns": "^2.29.3"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev-server.js"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Blog - Security Research & Techniques</title>
+    <meta name="description" content="Advanced bug bounty techniques, security research, and penetration testing methodologies">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+</head>
+<body>
+    <nav class="main-nav" data-animate="slide-down">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">Bug Bounty Blog</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/category/web-security.html">Web Security</a>
+                <a href="/category/tools.html">Tools</a>
+                <a href="/category/methodology.html">Methodology</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="content-wrapper">
+        <header class="hero" data-animate="fade-in">
+            <h1>Bug Bounty Blog</h1>
+            <p class="hero-subtitle">Advanced security research, vulnerability analysis, and penetration testing techniques</p>
+        </header>
+        
+        <section class="featured-posts">
+            <h2 data-animate="fade-up">Latest Posts</h2>
+            <div class="posts-grid">
+                {{POST_LISTINGS}}
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>© 2024 Bug Bounty Blog. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    </footer>
+    
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
